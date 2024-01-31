@@ -83,7 +83,7 @@ impl EventFormatter {
 
         // serialize the current span and its leaves
         if let Some(span) = span {
-            map.serialize_entry("span", &SerializableSpan::new(&span))?;
+            // map.serialize_entry("span", &SerializableSpan::new(&span))?; // DISABLED
             map.serialize_entry("spans", &SerializableContext::new(context))?;
 
             #[cfg(feature = "opentelemetry")]

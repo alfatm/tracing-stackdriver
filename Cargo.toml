@@ -20,69 +20,69 @@ rustdoc-args = ["--cfg", "docsrs"]
 doctest = false
 
 [dependencies]
-Inflector = "0.11.4"
-serde_json = "1.0.94"
-tracing-core = "0.1.22"
-thiserror = "1.0.40"
+Inflector = "0.11"
+serde_json = "1.0"
+tracing-core = "0.1"
+thiserror = "1.0"
 
 [dependencies.http]
 optional = true
-version = "0.2.9"
+version = "0.2"
 
 [dependencies.opentelemetry]
 default-features = false
 features = ["trace"]
-version = "0.21.0"
+version = "0.21"
 optional = true
 
 [dependencies.serde]
 features = ["derive"]
-version = "1.0.193"
+version = "1"
 
 [dependencies.time]
 default-features = false
 features = ["formatting"]
-version = "0.3.30"
+version = "0.3"
 
 [dependencies.tracing-opentelemetry]
-version = "0.22.0"
+version = "0.22"
 optional = true
 
 [dependencies.tracing-subscriber]
 features = ["json"]
-version = "0.3.18"
+version = "0.3"
 
 [dependencies.url]
 optional = true
-version = "2.5.0"
+version = "2.5"
 
 [dependencies.valuable]
 optional = true
 features = ["derive"]
-version = "0.1.0"
+version = "0.1"
 
 [dependencies.valuable-serde]
 optional = true
-version = "0.1.0"
+version = "0.1"
 
 [dev-dependencies]
-lazy_static = "1.4.0"
-tracing = "0.1.34"
-rand = "0.8.5"
-opentelemetry_sdk = "0.21.1"
+lazy_static = "1.4"
+tracing = "0.1"
+rand = "0.8"
+opentelemetry_sdk = "0.21"
 
 [dev-dependencies.time]
 features = ["serde", "serde-well-known", "formatting"]
-version = "0.3.30"
+version = "0.3"
 
 [dev-dependencies.opentelemetry]
 default-features = false
 features = ["testing", "trace"]
-version = "0.21.0"
+version = "0.21"
 
 [dev-dependencies.opentelemetry-stdout]
 features = ["trace"]
-version = "0.2.0"
+version = "0.2"
 
 [features]
 valuable = ["dep:valuable", "valuable-serde", "http", "url"]
